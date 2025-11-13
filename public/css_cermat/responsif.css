@@ -1,0 +1,963 @@
+/** Form Input Question **/
+#form-input-kecermatan .form-group .invalid-feedback {
+  position: absolute;
+}
+
+#form-input-kecermatan .form-group .invalid-none {
+  display: none;
+}
+
+.btn.btn-test {
+  padding: 0.375rem 0.35rem;
+  font-size: 0.9rem;
+  line-height: 0.9;
+  border-radius: unset;
+}
+
+.btn.btn-test:hover {
+  color: navy !important;
+  font-weight: bold;
+}
+
+.btn.btn-test.active {
+  color: navy !important;
+  font-weight: bold;
+}
+
+.symbol-container {
+  background: darkturquoise;
+  width: 100%;
+  height: 170px;
+  padding-bottom: 0.5rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.symbol-button input[type="button"] {
+  padding: 5px;
+  background: #f2f2f2;
+  border: none;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 33px;
+  margin-top: 7px;
+  border-radius: 5px;
+}
+
+.symbol-button input[type="button"]:hover {
+  background: #cdc9c9;
+}
+
+/** End Form Input Question **/
+
+
+/** Opening Test **/
+#main-test-container, #main-count-down, #main-test-opening {
+  display: none;
+}
+
+.opacity-section {
+  opacity: 0.3;
+}
+
+#sidebar-overlay {
+  z-index: 1060 !important;
+}
+
+/** End Opening Test **/
+
+/** Modal General Style **/
+body.test-kecermatan .content {
+  position: relative;
+  overflow: hidden;
+}
+
+.modal {
+  position: absolute !important;
+}
+
+.modal-backdrop {
+  width: 100%;
+  min-height: 100vh;
+  height: 100% !important;
+  z-index: unset;
+  position: absolute !important;
+}
+
+.show-op .modal-backdrop {
+  opacity: 0.9;
+  background: #f4f6f9;
+}
+
+.main-test #modal-retest .modal-dialog, .main-test #modal-loading .modal-dialog {
+  top: 120px
+}
+
+.main-test #modal-result .modal-dialog {
+  top: 0px;
+}
+
+.main-trial-test #modal-loading .modal-dialog {
+  top: 300px
+}
+
+.main-trial-test #modal-result .modal-content, #modal-payment-transfer .modal-content, #modal-payment-youtube .modal-content {
+  background: rgb(76 86 192);
+}
+
+.modal-content .payment-description{
+  line-height: 2rem;
+}
+
+.modal-content .payment-description .btn i, .modal-content .payment-description .btn i{
+  font-size: 1.3rem;
+}
+
+.modal-content .payment-description .btn span, .modal-content .payment-description .btn span{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.main-trial-test .show-op .modal-backdrop {
+  opacity: 0.9 !important;
+  background: rgb(48 56 169);
+}
+
+/** End Modal General Style **/
+
+
+/** Modal Result **/
+.main-test #modal-result .modal-body {
+  min-height: 450px;
+}
+
+.main-trial-test .modal {
+  padding-right: unset;
+}
+
+.main-trial-test #modal-result {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.main-trial-test #modal-result .modal-body {
+  min-height: 300px;
+}
+
+.main-trial-test #modal-result .modal-footer {
+  border-top: unset;
+}
+
+.main-trial-test #modal-result .modal-body .row-iframe {
+  height: 210px;
+}
+
+.main-trial-test #modal-result .modal-dialog {
+  top: 8rem;
+}
+
+.main-test #modal-result .modal-body .result-nilai-header, .main-test #modal-graphic .modal-body .result-nilai-header {
+  font-size: 1.1rem;
+}
+
+.main-test #modal-result, .main-test#main-test-kecermatan-history #modal-graphic {
+  overflow-y: scroll;
+}
+
+.main-test#main-test-kecermatan-history #modal-graphic {
+  padding-right: 0 !important;
+}
+
+.main-test #modal-result .modal-body #test-result-graphic, .main-test #modal-graphic .modal-body #test-result-graphic {
+  height: 320px !important;
+  width: 100% !important;
+}
+
+.main-test #modal-graphic .modal-body #test-result-graphic canvas {
+  height: auto !important;
+  width: 100% !important;
+}
+
+/** End Modal Result **/
+
+/** Modal Retest **/
+.main-test #modal-retest i {
+  font-size: 1.7rem;
+  padding: 11px 20px;
+  border: 2px solid #626e7a;
+  border-radius: 100%;
+  color: #626e7a;
+}
+
+/** End Modal Retest **/
+
+
+/** Custom Main Test Container **/
+#main-test-kecermatan {
+  position: relative;
+  height: 80vh;
+  padding-top: 3rem;
+}
+
+.main-test .table-column-questions>thead>tr>th {
+  border: 1px solid #000000 !important;
+  font-size: 3rem;
+  height: 70px;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-test .table-column-questions>thead>tr>th span {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.main-test .table-column-questions>tbody>tr>th {
+  border: 1px solid #000000 !important;
+  font-size: 11rem;
+  width: 160px;
+  height: 200px;
+  max-width: 160px;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-test .table-column-questions>tbody>tr>th span {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.main-test .table-column-questions>tbody>tr>td {
+  border: 1px solid #000000 !important;
+  font-size: 4rem;
+  font-weight: bold;
+  width: 160px;
+  height: 70px;
+  max-width: 160px;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-test .table-column-questions>tbody>tr>td span {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.main-test .table-questions>thead>tr>th {
+  border: 1px solid #000000 !important;
+  font-size: 3.5rem;
+  width: 160px;
+  height: 85px;
+  max-width: 160px;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-test .table-questions>thead>tr>th span {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.main-test .table-questions>tbody>tr>td {
+  border: 1px solid #000000 !important;
+  font-size: 2.5rem;
+  font-weight: bold;
+  width: 50px;
+  height: 55px;
+  max-width: 55px;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-test .table-questions>tbody>tr>td span {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.main-test .table-questions>tbody>tr>td:hover {
+  background-color: #a9a6a6;
+}
+
+.main-test #table-row-index {
+  color: #000000;
+  padding: 10px;
+  width: 50px;
+}
+
+/** End Custom Main Test Container **/
+
+
+/** Custom Main Trial Test Container **/
+.main-trial-test {
+  padding-top: 30px;
+  position: relative;
+}
+
+.main-trial-test #main-test-container {
+  background: rgb(48 56 169);
+  padding-top: 5vh;
+  padding-bottom: 10vh;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  position: relative;
+  overflow: hidden;
+}
+
+.main-trial-test .table-column-questions {
+  color: #ffffff !important;
+}
+
+.main-trial-test .table-column-questions>thead>tr>th {
+  border: 1px solid #ffffff !important;
+  font-size: 3rem;
+  height: 70px;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-trial-test .table-column-questions>thead>tr>th span {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.main-trial-test .table-column-questions>tbody>tr>th {
+  border: 1px solid #ffffff !important;
+  font-size: 12rem;
+  width: 160px;
+  height: 200px;
+  max-width: 160px;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-trial-test .table-column-questions>tbody>tr>th span {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.main-trial-test .table-column-questions>tbody>tr>td {
+  border: 1px solid #ffffff !important;
+  font-size: 3.5rem;
+  font-weight: bold;
+  width: 160px;
+  height: 70px;
+  max-width: 160px;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-trial-test .table-column-questions>tbody>tr>td span {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.main-trial-test .table-questions>thead>tr>th {
+  border: 1px solid #ffffff !important;
+  font-size: 3.5rem;
+  width: 160px;
+  height: 85px;
+  max-width: 160px;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-trial-test .table-questions>thead>tr>th span {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.main-trial-test .table-questions>tbody>tr>td {
+  border: 1px solid #ffffff !important;
+  font-size: 2.5rem;
+  font-weight: bold;
+  width: 50px;
+  height: 55px;
+  max-width: 55px;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-trial-test .table-questions>tbody>tr>td span {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.main-trial-test .table-questions {
+  color: #ffffff !important;
+}
+
+.table-questions>thead>tr>th {
+  font-size: 3rem;
+  letter-spacing: .5rem;
+}
+
+.table-questions>tbody>tr>td {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.main-trial-test .table-questions>tbody>tr>td:hover {
+  background-color: #161c6a;
+}
+
+.main-trial-test #table-row-index {
+  color: #ffffff;
+  padding: 10px;
+  width: 50px;
+}
+
+/** End Custom Main Trial Test Container **/
+
+
+/** Custom Main Count Down **/
+.main-trial #main-count-down {
+  background: rgb(48 56 169);
+}
+
+/** End Custom Main Count Down **/
+
+
+/** Custom Main Test Kecermatan History **/
+#main-test-kecermatan-history {
+  position: relative;
+  min-height: 105vh;
+  padding-top: 0rem;
+}
+
+#user-table {
+  width: 100% !important;
+}
+
+/** End Custom Main Test Kecermatan History **//*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
+
+@media (min-width: 1200px) and (max-width: 1500px) {}
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .navigation.navbar-dark .navbar-nav .nav-link {
+    padding: 0 20px;
+  }
+
+  .text-bg h1 {
+    padding-top: 0px;
+    font-size: 44px;
+    line-height: 61px;
+    padding-bottom: 18px;
+  }
+
+  .text-bg span {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  .text-bg a {
+    margin-right: 5px;
+    padding: 10px 23px;
+    float: inherit;
+    max-width: 156px;
+  }
+
+  .Services .Services-box {
+    padding: 25px 15px;
+  }
+
+  .Services .Services-box h3 {
+    font-size: 17px;
+  }
+
+  .why .why-box {
+    padding: 40px 10px 20px 10px;
+  }
+
+  .why .why-box h3 {
+    font-size: 19px;
+  }
+
+  .bg {
+    max-width: 170px;
+  }
+
+  .main_form {
+    padding: 55px 25px;
+  }
+
+  .cont span {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .cont p {
+    padding: 0px 30px;
+    padding-bottom: 60px;
+  }
+
+  .cont {
+    margin-top: 5%;
+  }
+
+  .main_form {
+    margin-bottom: -92%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .mean-container .mean-bar {
+    margin-top: 0px;
+  }
+
+  .text-bg a {
+    float: inherit;
+    margin-bottom: 30px;
+  }
+
+  .titlepage h2 {
+    font-size: 36px;
+  }
+
+  .web_hosting p {
+    padding: 40px 0px;
+  }
+
+  .bg {
+    margin-bottom: 30px;
+  }
+
+  .cont p {
+    padding: 0px 30px;
+    padding-bottom: 60px;
+  }
+
+  .cont {
+    margin-top: 5%;
+  }
+
+  .main_form {
+    margin-bottom: -58%;
+  }
+
+  .cont span {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .navigation.navbar {
+    float: right;
+    display: inherit !important;
+    padding: 0;
+    width: 100%;
+  }
+
+  .navigation .navbar-collapse {
+    background: #116fe1;
+    padding: 20px;
+    margin-top: 56px;
+    position: absolute;
+    width: 100%;
+    margin-right: 20px;
+    z-index: 999;
+  }
+
+  .navigation.navbar-dark .navbar-nav .nav-link {
+    padding: 10px 0;
+    color: #ffffff;
+  }
+
+  .navigation.navbar-dark .navbar-toggler {
+    border-color: #fff;
+    float: right;
+  }
+}
+
+@media (max-width: 575px) {
+  .header {
+    padding: 40px 0px 0px 0px;
+  }
+
+  .logo {
+    text-align: center !important;
+    padding-bottom: 25px;
+    float: left;
+  }
+
+  .text-bg h1 {
+    font-size: 41px;
+    line-height: 55px;
+    padding-bottom: 18px;
+  }
+
+  .text-bg a {
+    float: inherit;
+    margin-bottom: 30px;
+  }
+
+  .text-bg span {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .titlepage h2 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .web_hosting p {
+    padding: 40px 0px;
+  }
+
+  .bg {
+    margin-bottom: 30px;
+  }
+
+  .cont h3 {
+    font-size: 30px;
+  }
+
+  .cont p {
+    padding: 0px 0px;
+    padding-bottom: 60px;
+  }
+
+  .cont span {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .cont {
+    margin-top: 5%;
+  }
+
+  .main_form {
+    margin-bottom: -102%;
+    padding: 55px 15px;
+  }
+
+  .navigation.navbar {
+    float: right;
+    display: inherit !important;
+    padding: 0;
+    width: 100%;
+    margin-top: -70px;
+  }
+
+  .navigation .navbar-nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .navigation .navbar-collapse {
+    background: #116fe1;
+    padding: 0 20px 0 20px;
+    margin-top: 56px;
+    position: absolute;
+    width: 100%;
+    margin-right: 20px;
+    z-index: 999;
+  }
+
+  .navigation.navbar-dark .navbar-nav .nav-link {
+    padding: 10px 0;
+    color: #ffffff;
+  }
+
+  .navigation.navbar-dark .navbar-toggler {
+    border-color: #fff;
+    float: right;
+  }
+
+  /* Additional Navbar */
+
+  .navigation.navbar {
+    float: right;
+    display: inherit !important;
+    padding: 0;
+    width: 100%;
+    margin-top: -70px;
+  }
+
+  .nav-items {
+    background: #383b64;
+    padding: 0 20px 0 20px;
+    margin-top: 0px;
+    position: relative;
+    width: 100%;
+    margin-right: 20px;
+    z-index: 999;
+  }
+
+  .nav-items .navbar-nav .nav-link {
+    padding: 10px 0;
+    color: #ffffff;
+  }
+
+  .nav-items .navbar-nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 250px) and (max-width: 319px) and (-webkit-min-device-pixel-ratio: 1) {
+  .main-trial-test #modal-result .modal-dialog {
+    top: 15px;
+  }
+
+  .main-trial-test #modal-loading .modal-dialog {
+    top: 130px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 359px) and (-webkit-min-device-pixel-ratio: 1) {
+  .main-trial-test #modal-result .modal-dialog {
+    top: 0.5px;
+  }
+
+  .main-trial-test #modal-loading .modal-dialog {
+    top: 160px;
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 568px) and (-webkit-min-device-pixel-ratio: 1) {
+  .main-trial-test #modal-result .modal-dialog {
+    top: 45px;
+  }
+
+  .main-trial-test #modal-loading .modal-dialog {
+    top: 180px;
+  }
+}
+
+@media only screen and (min-width: 710px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .main-trial-test #modal-result .modal-dialog {
+    top: 50px;
+  }
+
+  .main-trial-test #modal-loading .modal-dialog {
+    top: 190px;
+  }
+}
+
+@media screen and (min-width : 280px) and (max-width : 318px) {
+  .main-trial-test .table-column-questions>thead>tr>th {
+    font-size: 1.8rem;
+    height: 44px;
+  }
+
+  .main-trial-test .table-column-questions>tbody>tr>th {
+    font-size: 3rem;
+    height: 75px;
+    max-width: 100px;
+  }
+
+  .main-trial-test .table-column-questions>tbody>tr>td {
+    font-size: 2rem;
+    height: 45px;
+  }
+
+  .main-trial-test .table-questions>thead>tr>th {
+    font-size: 2.5rem;
+    height: 50px;
+  }
+
+  .main-trial-test .table-questions>tbody>tr>td {
+    font-size: 1.5rem;
+    height: 40px;
+  }
+
+  .main-trial-test #modal-result .modal-dialog .success-icon i {
+    font-size: 2.5em;
+  }
+
+  .main-trial-test #modal-result .modal-body h4 {
+    font-size: 1.1em;
+  }
+
+  .my-registration-page h1 {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media screen and (min-width : 319px) and (max-width : 325px) {
+  .main-trial-test .table-column-questions>thead>tr>th {
+    font-size: 2rem;
+    height: 45px;
+  }
+
+  .main-trial-test .table-column-questions>tbody>tr>th {
+    font-size: 4rem;
+    height: 90px;
+  }
+
+  .main-trial-test .table-column-questions>tbody>tr>td {
+    font-size: 2.7rem;
+    height: 50px;
+  }
+
+  .main-trial-test .table-questions>thead>tr>th {
+    font-size: 3rem;
+    height: 60px;
+  }
+
+  .main-trial-test .table-questions>tbody>tr>td {
+    font-size: 2rem;
+    width: 50px;
+  }
+
+  .main-trial-test #modal-result .modal-dialog .success-icon i {
+    font-size: 3em;
+  }
+
+  .main-trial-test #modal-result .modal-body h4 {
+    font-size: 1.4em;
+  }
+
+  .my-registration-page h1 {
+    font-size: 2rem;
+  }
+
+}
+
+@media screen and (min-width : 326px) and (max-width : 480px) {
+  .main-trial-test .table-column-questions>thead>tr>th {
+    font-size: 2rem;
+    height: 45px;
+  }
+
+  .main-trial-test .table-column-questions>tbody>tr>th {
+    font-size: 5rem;
+    height: 100px;
+  }
+
+  .main-trial-test #modal-result .modal-dialog .success-icon i {
+    font-size: 3em;
+  }
+
+  .main-trial-test #modal-result .modal-body h4 {
+    font-size: 1.4em;
+  }
+
+  .my-registration-page h1 {
+    font-size: 2rem;
+  }
+
+}
+
+/* Tab and Nest (portrait) ----------- */
+@media only screen and (min-device-width : 481px) and (max-device-width : 767px) {
+  .my-form .card-wrapper {
+    width: 100% !important;
+  }
+
+  .main-trial-test .table-column-questions>thead>tr>th {
+    font-size: 2rem;
+    height: 45px;
+  }
+
+  .main-trial-test .table-column-questions>tbody>tr>th {
+    font-size: 5rem;
+    height: 100px;
+  }
+
+  .main-trial-test #modal-result .modal-dialog .success-icon i {
+    font-size: 3em;
+  }
+
+  .main-trial-test #modal-result .modal-body h4 {
+    font-size: 1.4em;
+  }
+
+  .my-registration-page h1 {
+    font-size: 2rem;
+  }
+
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .banner_main {
+    min-height: 75vh;
+  }
+
+  .main-trial-test .table-column-questions>thead>tr>th {
+    font-size: 2rem;
+    height: 45px;
+  }
+
+  .main-trial-test .table-column-questions>tbody>tr>th {
+    font-size: 5rem;
+    height: 100px;
+  }
+
+  .main-trial-test #modal-result .modal-dialog .success-icon i {
+    font-size: 3em;
+  }
+
+  .main-trial-test .table-questions>thead>tr>th {
+    font-size: 1.6rem;
+    height: 40px;
+  }
+
+  .main-trial-test .table-questions>tbody>tr>td {
+    font-size: 1.5rem;
+    height: 35px;
+  }
+
+  .main-trial-test #modal-result .modal-body h4 {
+    font-size: 1.4em;
+  }
+
+}
+
+@media only screen and (min-device-width : 992px) and (max-device-width : 1024px) {
+  .banner_main {
+    min-height: 78vh;
+  }
+}
