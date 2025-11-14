@@ -8,12 +8,9 @@
                 </a>
             </li>
             @can('admin')
-                <li class="nav-item">
-                    <a class="nav-link {{ Request::is('#') ? 'active' : '' }}" href="#">
-                        <span data-feather="file-text"></span>
-                        Setting
-                    </a>
-                </li>
+                <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Setting</span>
+                </h6>
 
                 <a class="nav-link {{ Request::is('dashboard/input_soal*') ? 'active' : '' }}" href="/dashboard/input_soal">
                     <span data-feather="file-text"></span>
