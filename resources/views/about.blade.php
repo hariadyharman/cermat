@@ -286,7 +286,7 @@
 
         <div class="controls" role="group" aria-label="controls">
             <a class="btn primary" href="/" id="homeBtn">🏠 Kembali ke Beranda</a>
-            <a class="btn ghost" href="mailto:azwa_nisya@gmail.com">✉️ Kirim Email</a>
+            <a class="btn ghost" href="mailto:mandoubuntu0046@gmail.com">✉️ Kirim Email</a>
         </div>
     </main>
 

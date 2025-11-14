@@ -130,6 +130,7 @@
                 <th>No</th>
                 <th>Nama Peserta</th>
                 <th>Rata-Rata Skor</th>
+                <th>Nilai Akhir</th>
             </tr>
         </thead>
         <tbody>
@@ -138,10 +139,12 @@
                     <td>{{ $loop->iteration }}</td>
                     <td>{{ $data['nama'] }}</td>
                     <td>{{ $data['rata_rata'] }}</td>
+                    <td>{{ $data['nilai_akhir'] }}</td>
                 </tr>
             @endforeach
         </tbody>
     </table>
+
 
     {{-- Footer copywrite --}}
     <footer>

@@ -62,20 +62,27 @@ class HasilUjianController extends Controller
         return view('dashboard.hasil.index', compact('hasil', 'chartLabels', 'chartDatasets'));
     }
 
-    public function exportPdf()
+public function exportPdf()
 {
-    $hasil = HasilUjian::with('user')
-        ->orderBy('user_id')
-        ->orderByDesc('created_at')
-        ->get();
+ $hasil = HasilUjian::with('user')
+    ->orderBy('user_id')
+    ->orderByDesc('created_at')
+    ->get();
 
-    // Rekap rata-rata skor per peserta
-    $rekap = $hasil->groupBy('user_id')->map(function ($rows) {
-        return [
-            'nama' => $rows->first()->user->name ?? 'Tidak ada',
-            'rata_rata' => round($rows->avg('total_skor'), 2)
-        ];
-    });
+// Rekap rata-rata skor per peserta
+$rekap = $hasil->groupBy('user_id')->map(function ($rows) {
+    $latest = $rows->first(); // hasil terbaru
+
+    $rata = round($latest->total_skor / 10, 2);
+    $nilaiAkhir = round($rata * 3, 2);
+
+    return [
+        'nama'         => $latest->user->name ?? 'Tidak ada',
+        'rata_rata'    => $rata,
+        'nilai_akhir'  => $nilaiAkhir
+    ];
+});
+
 
     $pdf = Pdf::loadView('dashboard.hasil.pdf', compact('hasil', 'rekap'))
               ->setPaper('a4', 'landscape');
